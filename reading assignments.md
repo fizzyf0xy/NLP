@@ -14,3 +14,22 @@ Point criteria:
 0:  Not done / copy
 1:  Ok
 2:  With good, clear, precise, personal explanations in own words
+
+Paper title: Learning a Grammar Inducer from Massive Uncurated Instructional Videos
+Link: https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.16.pdf
+
+|Title|Learning a Grammar Inducer from Massive Uncurated Instructional Videos|
+|------|-----|
+|Problems|They investigate the problems about text and video are in loose correspondence, and they need to leverage video information for finding more accurate syntactic grammars for accompanying text.|
+|Related works| 1. Lisa Anne Hendricks, Oliver Wang, Eli Shechtman, Josef Sivic, Trevor Darrell, and Bryan Russell. 2017. Localizing moments in video with natural language. In ICCV. |
+|             |2. Luowei Zhou, Chenliang Xu, and Jason J Corso. 2018. Towards automatic learning of procedures from web instructional videos. In AAAI. |
+|             |3. Jun Xu, Tao Mei, Ting Yao, and Yong Rui. 2016. MSR- VTT: A large video description dataset for bridging video and language. In CVPR.|
+|Method|C- PCFG, MMC-PCFG and PTC-PCFG|
+|Results|1. C-PCFG achieve better performance when they are trained with more instances from HowTo100M than the original in-domain training sets.|
+|       |2. PTC-PCFG achieves the best performances in all three datasets. It can further improve S-F1 to
++6.3% on DiDeMo, +16.7% on YouCook2 and +2.8% on MSRVTT|
+|       |3. PTC-PCFG achieves the best performances in all three datasets.|
+|Conclusion|They knew how massive instructional YouTube video and subtitle pairs can improve grammar induction through new model in multi-modal pre-training to learn better video span correlation by experimenting on three benchmarks demonstrate.|
+|Limitations|1. The models only use instructional video and do not have the capability to interact with the world, they are unrealistic for human language learners.|
+|           |2. The complexity of the PCFG induction algorithm they use is cubic to the number of syntactic categories, therefore potentially limits the usefulness of larger amounts of data.|
+
