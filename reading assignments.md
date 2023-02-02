@@ -32,3 +32,15 @@ Link: https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.16.pdf
 |Limitations|1. The models only use instructional video and do not have the capability to interact with the world, they are unrealistic for human language learners.|
 |           |2. The complexity of the PCFG induction algorithm they use is cubic to the number of syntactic categories, therefore potentially limits the usefulness of larger amounts of data.|
 
+## A Fast and Accurate Dependency Parser using Neural Networks
+Link: https://aclanthology.org/D14-1082.pdf
+
+|Title|A Fast and Accurate Dependency Parser using Neural Networks|
+|------|-----|
+|Related Works|1. Neural networks in a broad-coverage Penn Treebank parser (Henderson, 2004)|
+|             |2. Transition-based dependency parsers using a Temporal Restricted Boltzman Machine (Garg and Henderson, 2011)|
+|             |3. Precursive neural networks for transition-based dependency parsing (Stenetorp, 2013)|
+|Method|1. LEFT-ARC(l): adding an arc s1 → s2 with label l and removes s2 from the stack. Pre-condition: |s| ≥ 2.|
+|      |2. RIGHT-ARC(l): adding an arc s2 → s1 with label l and removes s1 from the stack. Pre-condition: |s| ≥ 2.|
+|      |3. SHIFT: b1 moves from the buffer to the stack. Precondition: |b| ≥ 1.|
+|Results|The parser is better in terms of both accuracy and speed. When we comparing between the baselines of arc-eager and arc-standard parsers, the parser achieves 2% improvement in UAS and LAS on all datasets, while running about 20 times faster.|
