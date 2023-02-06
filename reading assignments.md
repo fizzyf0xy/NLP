@@ -44,3 +44,17 @@ Link: https://aclanthology.org/D14-1082.pdf
 |      |2. RIGHT-ARC(l): adding an arc s2 → s1 with label l and removes s1 from the stack. Pre-condition: |s| ≥ 2.|
 |      |3. SHIFT: b1 moves from the buffer to the stack. Precondition: |b| ≥ 1.|
 |Results|The parser is better in terms of both accuracy and speed. When we comparing between the baselines of arc-eager and arc-standard parsers, the parser achieves 2% improvement in UAS and LAS on all datasets, while running about 20 times faster.|
+
+
+## Neural Topic Model with Reinforcement Learning
+Link: https://aclanthology.org/D19-1350.pdf
+
+|Title|Neural Topic Model with Reinforcement Learning|
+|------|-----|
+|Problems|They want to use inforcement learning and incorporate topic coherence measures as reward signals to guide the learning of a VAE-based topic model.|
+|Related works| 1. Qingyu Yin, Yu Zhang, Wei-Nan Zhang, Ting Liu, and William Yang Wang. 2018. Deep reinforce- ment learning for chinese zero pronoun resolution. |
+|             |2. Yishu Miao, Lei Yu, and Phil Blunsom. 2016. Neu- ral variational inference for text processing. |
+|Method|Reinforcement Learning, VTMRL(Best practice), LDA, NVDM, NGTM|
+|Results|VTMRL show superior performance both on perplexity and topic coherence measure compared to state-of-the-art neural topic models.|
+|Conclusion|They have proposed a new reinforcement learning (RL) framework for neural topic modelling, where words are activated dynamically by RL according to topic coherence scores and topic overlapping values.|
+|Limitations|The experiments are made on the 20 Newsgroups and NIPS datasets not temporal modelling.|
