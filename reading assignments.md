@@ -58,3 +58,17 @@ Link: https://aclanthology.org/D19-1350.pdf
 |Results|VTMRL show superior performance both on perplexity and topic coherence measure compared to state-of-the-art neural topic models.|
 |Conclusion|They have proposed a new reinforcement learning (RL) framework for neural topic modelling, where words are activated dynamically by RL according to topic coherence scores and topic overlapping values.|
 |Limitations|The experiments are made on the 20 Newsgroups and NIPS datasets not temporal modelling.|
+
+
+## Beyond Accuracy: Behavioral Testing of NLP Models with CheckList
+Link: https://aclanthology.org/2020.acl-main.442.pdf
+|Title|Beyond Accuracy: Behavioral Testing of NLP Models with CheckList|
+|------|-----|
+|Problems|They want to decrease biases and capability failures into specific behaviors by proposing CheckList, a new evaluation methodology and accompanying tool for comprehensive behavioral testing of NLP models.|
+|Related works|1.Saleema Amershi, Andrew Begel, Christian Bird, Rob DeLine, Harald Gall, Ece Kamar, Nachi Nagap- pan, Besmira Nushi, and Tom Zimmermann. 2019. Software engineering for machine learning: A case study. |
+|             |2.Mor Geva, Yoav Goldberg, and Jonathan Berant. 2019. Are we modeling the task or the annotator? an inves- tigation of annotator bias in natural language under- standing datasets. |
+|             |3.Eric Wallace, Shi Feng, Nikhil Kandpal, Matt Gardner, and Sameer Singh. 2019. Universal adversarial trig- gers for attacking and analyzing nlp.|
+|Method| MFT, NER, DIR, NLP tasks: sentiment analysis (Sentiment), duplicate question detection, and machine comprehension|
+|Results|Users without prior experience are able to find significant bugs in a SOTA model in only 2 hours. Rate different aspects of CheckList (on a scale of 1-5), users in- dicated the testing session helped them learn more about the model (4.7  ̆ 0.5), capabilities helped them test the model more thoroughly (4.5  ̆ 0.4), and so did templates (4.3  ̆ 1.1).|
+|Conclusion| CheckList reveals critical bugs in commercial systems developed by large software companies, indicating that it complements current practices well. Tests created with CheckList can be applied to any model, making it easy to incorporate in current benchmarks or evaluation pipelines.|
+|Limitations|They expect that collaborative test creation will result in evaluation of NLP models that is much more ro- bust and detailed, beyond just accuracy on held-out data.|
