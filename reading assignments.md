@@ -72,3 +72,19 @@ Link: https://aclanthology.org/2020.acl-main.442.pdf
 |Results|Users without prior experience are able to find significant bugs in a SOTA model in only 2 hours. Rate different aspects of CheckList (on a scale of 1-5), users in- dicated the testing session helped them learn more about the model (4.7  ̆ 0.5), capabilities helped them test the model more thoroughly (4.5  ̆ 0.4), and so did templates (4.3  ̆ 1.1).|
 |Conclusion| CheckList reveals critical bugs in commercial systems developed by large software companies, indicating that it complements current practices well. Tests created with CheckList can be applied to any model, making it easy to incorporate in current benchmarks or evaluation pipelines.|
 |Limitations|They expect that collaborative test creation will result in evaluation of NLP models that is much more ro- bust and detailed, beyond just accuracy on held-out data.|
+
+
+
+## BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+Link: https://arxiv.org/pdf/1810.04805.pdf
+|Title|BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding|
+|------|-----|
+|Problems|They improve the fine-tuning based approaches by proposing BERT, which alleviates the unidirectionality constraint by using a “masked language model” (MLM) pre-training objective, inspired by the Cloze task.|
+|Related works|1.Unsupervised Feature-based Approaches: William Fedus, Ian Goodfellow, and Andrew M Dai. 2018. Maskgan: Better text generation via filling in the . . arXiv preprint arXiv:1801.07736.|
+|             |2.Unsupervised Fine-tuning Approaches: Jeremy Howard and Sebastian Ruder. 2018. Universal language model fine-tuning for text classification. |
+|             |3.Transfer Learning from Supervised Data: Jason Yosinski, Jeff Clune, Yoshua Bengio, and Hod Lipson. 2014. How transferable are features in deep neural networks?|
+|Method|BERT|
+|Results|They obtain new state-of-the-art results on eleven natural language processing tasks, following as below.|
+|       |GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute im- provement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).|
+|Conclusion|Recent empirical improvements due to transfer learning with language models have demonstrated that rich, unsupervised pre-training is an integral part of many language understanding systems, and enable even low-resource tasks to benefit from deep unidirectional architectures.|
+|Limitations|They need a further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks.|
